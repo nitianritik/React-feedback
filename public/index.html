@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html    lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="./form.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React FeedBack Form</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+     
+    -->
+
+
+  
+
+      <div style=" background-attachment:fixed;   background-size:auto; ">
+          <section style="   border:solid #ccc 1px; border-radius: 10px; background-color: #f2f2f2;" class="section1">
+              <p style=" margin-left:2% ; font-size: 12px; float: left;"> 🔴🟡🟢</p>
+              <h3 style="text-align: center;"> Feedback Form </h3>
+  
+              <hr>
+              <div class="container">
+                  <!-- action="/action_page.php" -->
+                  <form id="form1" onsubmit="return false">
+                      <label for="name1">First Name •</label>
+                      <input type="text" id="fname" name="firstname1" placeholder="Enter First Your name here">
+  
+                      <label for="name2">Middle Name</label>
+                      <input type="text" id="mname" name="lastname2" placeholder="Enter your Middle name here (optional) ">
+  
+                      <label for="name3">Last Name •</label>
+                      <input type="text" id="lname" name="lastname1" placeholder="Enter your last name here">
+                      <!--  cut down the style given below -->
+                      <section style=" font-size: 15px;" class="radio">
+  
+                          <label class="containe">
+                          <input id="M" type="radio" name="radio">
+                          Male
+                      </label>
+                          <label class="containe">
+                          <input id="F" type="radio" name="radio">
+                          Female
+                      </label>
+                      </section>
+  
+  
+                      <label for="subject">Feedback •</label>
+                      <textarea type="text" id="feed9" placeholder="Write something.." style="height:100px"></textarea>
+  
+                      <!----    <button class="add" style=" border:solid 2px ;  border-radius: 10px; padding:  5px 8px -2px 8px;"
+                  onclick="showall()">
+              ---->
+  
+                      <button id="add" type="submit" style=" display: inline;;  border-radius: 10px; " onClick="addfeed()">
+                  + 
+     
+             </button>
+  
+                      <button id="add2" type="reset" style=" display: inline;   border-radius: 10px; " onClick="resetform()">
+              - 
+  
+          </button>
+  
+                  </form>
+  
+  
+  
+  
+  
+  
+              </div>
+  
+  
+  
+  
+          </section>
+          <section style=" display: inline-flexbox; border:solid #ccc 1px; height: 0%; border-radius: 10px; background-color: #f2f2f2; " class="section2 ">
+              <p style="font-size: 12px; float: left;">🔴🟡🟢</p>
+  
+              <h3 style="text-align: center; ">
+                  Feedbacks
+              </h3>
+              <hr>
+  
+              <div>
+                  <textarea style=" font-family: Comic Sans MS;" type="text" class="hey" id="sub6" " style=" width: 100%; " rows="25 " readonly >
+
+                  
+                      </textarea>
+          </div>
+  
+      </section>
+  </div>
+  
+  
+  
+   <!--
+     
+    -->
+
+
+
+
+
+
+    
+  </body>
+</html>
